@@ -1,12 +1,13 @@
 <script lang="ts" setup>
 import { reactive } from "vue";
+import { useRouter } from "vue-router";
 
 //ユーザー名の入力値を保持するためnameという状態を保持する
 const state = reactive({ name: "" });
-
+const router = useRouter();
 //上記のname値の値をaleatで表示する関数（今後ゲームページに遷移するための関数として利用）
 const startGame = () => {
-  alert(`ユーザー名:${state.name}`);
+  router.push({ name: "PlayPage", query: { name: state.name } });
 };
 </script>
 

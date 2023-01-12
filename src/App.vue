@@ -1,9 +1,7 @@
-<script setup lang="ts">
-import TopPage from "./pages/TopPage.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <TopPage />
+  <router-view />
 </template>
 
 <style scoped>
