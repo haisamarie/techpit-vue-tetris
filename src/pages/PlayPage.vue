@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const row = 20;
-const colum = 10;
+const column = 10;
 
 const field = new Array(row);
 
@@ -23,7 +23,7 @@ for (let i = 0; i < row; i++) {
   </div>
 </template>
 
-<!-- テトリスのフィールドのデザインを整えるためのスタイルシート -->
+
 <style scoped>
 .container {
   display: flex;
@@ -42,10 +42,7 @@ for (let i = 0; i < row; i++) {
   border: 0.1px solid #95a5a6;
 }
 
-<!--
-  テトリスのフィールドのデザインを整えるためのスタイルシート
-  --
-  > <style
+<style
   scoped
   > .container {
   display: flex;
